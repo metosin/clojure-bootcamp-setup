@@ -38,3 +38,9 @@ pom.xml.asc
 */.idea/workspace.xml
 */.idea/tasks.xml
 
+#
+# Project:
+#
+
+resources/public/setup.js
+
