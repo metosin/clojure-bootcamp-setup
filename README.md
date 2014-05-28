@@ -11,21 +11,15 @@ You need:
 * JDK 1.6 _(or later)_: http://java.oracle.com
 * Leiningen 2.3.4 _(or later)_: http://leiningen.org
 
-## Running application
+## Running setup application
 
 ```bash
 git clone git@github.com:metosin/clojure-bootcamp-setup.git
 cd clojure-bootcamp-setup
-lein deps
-```
-
-Leiningen shows how it downloads half of the internet (the better half) to your HD.
-
-```bash
 lein do cljsbuild once, ring server
 ```
 
-This will compile the application, it might take a long time (like 30 sec or so). Don't worry, the normal development cycle is usually less than 1 sec. Once the app is running it should open your browser and show you a greeting message. If that's what you get you, and your machine, are ready for the training. If something did not work as intended, contact us for help.
+When run for the first time Leiningen shows how it downloads half of the internet (the better half) to your HD and then it compiles the application. This might take a some time (like 30 sec or so). Don't worry, the normal development cycle is usually less than 1 sec. Once the dependencies are downloaded and the application started it should open a browser and show you a greeting message. If that's what you get it means that you, and your machine, are ready for the training. If something did not work as intended, contact us for help.
 
 You can stop the application with ```ctrl-c```.
 
