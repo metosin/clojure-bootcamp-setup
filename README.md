@@ -14,9 +14,8 @@ You need:
 ## Running application
 
 ```bash
-git clone https://github.com/metosin/clojure-bootcamp
-cd clojure-bootcamp
-cd setup-test
+git clone git@github.com:metosin/clojure-bootcamp-setup.git
+cd clojure-bootcamp-setup
 lein deps
 ```
 
