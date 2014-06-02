@@ -58,6 +58,10 @@ IDEA has two Clojure plugins, the old La Clojure and the new and shiny Cursive. 
 
 Import the project as decribed in this page https://cursiveclojure.com/userguide/leiningen.html
 
+### Vim
+
+See https://gist.github.com/Deraen/da73db508e75eb4aad71 for list of few useful plugins and settings.
+
 ### Emacs
 
 See https://github.com/clojure-emacs/cider
