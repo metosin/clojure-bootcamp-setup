@@ -1,8 +1,7 @@
 (ns setup.server
   (:require [clojure.java.io :as io]
-            [clojure.string :as s]
             [org.httpkit.server :as httpkit]
-            [ring.util.http-response :refer [ok content-type header] :as resp]
+            [ring.util.http-response :refer [ok]]
             [compojure.core :refer :all]
             [compojure.route :as route]))
 

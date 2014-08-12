@@ -3,10 +3,10 @@
 (enable-console-print!)
 
 (def request-animation-frame (or (.-requestAnimationFrame js/window)
-                               (.-mozRequestAnimationFrame js/window)
-                               (.-webkitRequestAnimationFrame js/window)
-                               (.-msRequestAnimationFrame js/window)
-                               (fn [f] (.setTimeout js/window f 16))))
+                                 (.-mozRequestAnimationFrame js/window)
+                                 (.-webkitRequestAnimationFrame js/window)
+                                 (.-msRequestAnimationFrame js/window)
+                                 (fn [f] (.setTimeout js/window f 16))))
 
 (def canvas (.getElementById js/document "c"))
 (def ctx    (.getContext canvas "2d"))
