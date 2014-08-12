@@ -29,7 +29,8 @@
                  [sablono "0.2.21"]]
   :source-paths ["src/clj" "src/cljs"]
   :profiles {:dev {:dependencies [[midje "1.6.3"]]
-                   :plugins [[lein-ring "0.8.10"]
+                   :plugins [[lein2-eclipse "2.0.0"]
+                             [lein-ring "0.8.10"]
                              [lein-cljsbuild "1.0.3"]]}
              :uberjar {:hooks [leiningen.cljsbuild]
                        :source-paths ["src/clj" "src/main"]

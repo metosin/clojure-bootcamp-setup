@@ -46,7 +46,7 @@ This command creates the ```.project``` and ```.classpath``` files for Eclipse.
 
 Clojure plugin for Eclipse is Counterclockwise. Follow the instructions at http://doc.ccw-ide.org to install Counterclockwise plugin to your Eclipse. Once you have Counterclockwise installed you can continue.
 
-In Eclipse, choose ```File``` -> ```Import...``` -> ```Existing projects into Workspace``` -> ```Next >``` -> Select the ```setup-test``` directory -> ```Finish```
+In Eclipse, choose ```File``` -> ```Import...``` -> ```Existing projects into Workspace``` -> ```Next >``` -> Select the ```clojure-bootcamp-setup``` directory -> ```Finish```
 
 The project is now opened as a *regular Clojure project* (similar to basic Java project). Since we are using Leiningen to manage our dependencies we need to convert this to Leiningen project (similar to Maven project). Right click the imported project and choose ```Configure``` -> ```Convert to Leiningen project```.
 
@@ -57,6 +57,10 @@ In the project, open the ```src/clj``` -> ```setup``` -> ```server.clj``` file, 
 IDEA has two Clojure plugins, the old La Clojure and the new and shiny Cursive. Follow the instuctions for installing Cursive in here https://cursiveclojure.com/userguide/
 
 Import the project as decribed in this page https://cursiveclojure.com/userguide/leiningen.html
+
+### Vim
+
+See https://gist.github.com/Deraen/da73db508e75eb4aad71 for list of few useful plugins and settings.
 
 ### Emacs
 
