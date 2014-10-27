@@ -61,7 +61,7 @@ open. Type into it `(run)` and hit enter. You should see a
 message `"App running..."`, the application is now ready and
 listening HTTP trafic on port 8080. Open your browser to http://localhost:8080/.
 
-For 2nd day of training, it might be useful to condigure your Eclipse for
+For 2nd day of training, it might be useful to configure your Eclipse for
 [cljx](https://github.com/lynaghk/cljx#eclipse--counterclockwise).
 
 ### IntelliJ IDEA with Cursive
