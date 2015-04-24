@@ -10,8 +10,17 @@ them will populate your local cache with them so that when we use them in traini
 
 You need:
 
+* Laptop, with Linux, Mac OS X, or recent Windows
+
+Note, if you have Linux or Mac, you can install these using your package manager. In case 
+of Mac, use [homebrew](http://brew.sh) with [cask](http://caskroom.io).
+
 * JDK 1.8 _(or later)_: http://java.oracle.com
 * Leiningen 2.5.0 _(or later)_: http://leiningen.org
+* git: http://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+* github account: https://github.com/join
+* MongoDB: http://docs.mongodb.org/manual/installation/
+* httpie: https://github.com/jakubroztocil/httpie
 
 ## Running setup application
 
