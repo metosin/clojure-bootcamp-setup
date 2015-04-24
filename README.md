@@ -70,7 +70,8 @@ file into it. You should now have the REPL window open. Type into it `(run)` and
 http://localhost:8080/.
 
 For 2nd day of training, it might be useful to configure your Eclipse so that it recognize ```.cljc``` files as
-Clojure sources. Follow these instructions, but substitute ```.cljx``` with ```.cljc```: [cljx](https://github.com/lynaghk/cljx#user-content-eclipse--counterclockwise).
+Clojure sources. Follow [these](https://github.com/lynaghk/cljx#user-content-eclipse--counterclockwise) instructions
+for ```Eclipse + CounterClockwise```, but substitute ```.cljx``` with ```.cljc```.
 
 ### Vim
 
