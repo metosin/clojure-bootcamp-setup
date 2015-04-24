@@ -22,6 +22,14 @@ of Mac, use [homebrew](http://brew.sh) with [cask](http://caskroom.io).
 * MongoDB: http://docs.mongodb.org/manual/installation/
 * httpie: https://github.com/jakubroztocil/httpie
 
+## Optional
+
+At the end of training you have developed a small Web application that you can deploy to [Heroku](https://heroku.com/).
+This is not mandatory, but if you would like to do that, you'll need:
+
+* Heroku account: https://signup.heroku.com/
+* Heroku toolbelt: https://devcenter.heroku.com/articles/getting-started-with-clojure#set-up
+
 ## Running setup application
 
 ```bash
