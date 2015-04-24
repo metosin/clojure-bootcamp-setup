@@ -10,7 +10,7 @@ them will populate your local cache with them so that when we use them in traini
 
 You need:
 
-* Laptop, with Linux, Mac OS X, or recent Windows
+* Laptop with Linux, Mac OS X, or recent Windows
 
 Note, if you have Linux or Mac, you can install these using your package manager. In case 
 of Mac, use [homebrew](http://brew.sh) with [cask](http://caskroom.io).
@@ -30,7 +30,12 @@ This is not mandatory, but if you would like to do that, you'll need:
 * Heroku account: https://signup.heroku.com/
 * Heroku toolbelt: https://devcenter.heroku.com/articles/getting-started-with-clojure#set-up
 
-## Running setup application
+## Running this setup
+
+This project has simple Clojure/ClojureScript application. By running this you can check that your setup is
+ok. Also, this project has dependencies to (most) of the libraries will be using in training, so building
+this project ensures thta you'll have them in your local HD. Sometimes the wlan in trainings chokes when
+everybody tries to pull these at the same time, so do this before training:
 
 ```bash
 git clone git@github.com:metosin/clojure-bootcamp-setup.git
@@ -38,14 +43,7 @@ cd clojure-bootcamp-setup
 lein do cljsbuild once, ring server
 ```
 
-When run for the first time Leiningen shows how it downloads half of the internet (the better half) to
-your HD and then it compiles the application. This might take a some time (like 30 sec or so). Don't worry,
-the normal development cycle is usually less than 1 sec. Once the dependencies are downloaded and the
-application started it should open a browser and show you a greeting message. If that's what you get it
-means that you, and your machine, are ready for the training. If something did not work as intended, contact
-us for help.
-
-You can stop the application with `ctrl-c`.
+You'll should see a page with greeting message. You can stop the application with `ctrl-c`.
 
 ## Setup your IDE
 
