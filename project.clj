@@ -1,38 +1,56 @@
 (defproject setup-test "0.1.0-SNAPSHOT"
   :description "Test training setup, depend on half of the internet to populate local .m2 caches"
   :license {:name "Eclipse Public License" :url "http://www.eclipse.org/legal/epl-v10.html"}
-  :dependencies [[org.clojure/clojure "1.6.0"]
-                 [prismatic/schema "0.3.1"]
+
+  :dependencies [[org.clojure/clojure "1.7.0-beta1"]
+                 [org.clojure/tools.reader "0.9.2"]
+                 [org.clojure/clojurescript "0.0-3211"]
+
+                 ; Server:
                  [http-kit "2.1.19"]
-                 [ring/ring-core "1.3.1"]
-                 [ring/ring-devel "1.3.1"]
-                 [compojure "1.2.1"]
-                 [metosin/ring-http-response "0.5.1"]
-                 [org.clojure/clojurescript "0.0-2371"]
-                 ; pull these in users local .m2 repo before training
-                 [org.clojure/core.async "0.1.303.0-886421-alpha"]
-                 [camel-snake-kebab "0.2.5" :exclusions [org.clojure/clojure]]
-                 [cheshire "5.3.1"]
-                 [com.novemberain/monger "2.0.0"]
-                 [slingshot "0.12.1"]
-                 [clj-http "1.0.0"]
+                 [ring/ring-core "1.3.2"]
+                 [ring/ring-devel "1.3.2"]
+
+                 ; Not used by this project, but included in here so that thet
+                 ; get pulled to your local .m2 repo before training.
+                 [org.clojure/core.async "0.1.346.0-17112a-alpha"]
+                 [prismatic/schema "0.4.1"]
+                 [prismatic/plumbing "0.4.2"]
+
+                 [com.stuartsierra/component "0.2.3"]
+
+                 [clj-http "1.1.1"]
+                 [cljs-http "0.1.30"]
+
+                 [clj-time "0.9.0"]
+                 [com.andrewmcveigh/cljs-time "0.3.4"]
+
+                 [com.novemberain/monger "2.1.0"]
+
                  [enlive "1.1.5"]
                  [hiccup "1.0.5"]
-                 [clj-time "0.8.0"]
+
+                 [reagent "0.5.0"]
                  [garden "1.2.5"]
                  [prismatic/dommy "1.0.0"]
-                 [om "0.7.3"]
-                 [prismatic/om-tools "0.3.6" :exclusions [org.clojure/clojure]]
-                 [cljs-ajax "0.3.3"]
-                 [com.andrewmcveigh/cljs-time "0.2.3"]
-                 [im.chit/purnam.test "0.5.1"]
-                 [sablono "0.2.22"]]
-  :pedantic? false
+                 [com.domkm/silk "0.0.4"]
+
+                 [ring-webjars "0.1.0"]
+                 [org.webjars/bootstrap "3.3.2-1"]
+                 [org.webjars/font-awesome "4.3.0-1"]
+                 [org.webjars/es5-shim "4.0.6"]
+
+                 [metosin/potpuri "0.2.2"]
+                 [metosin/compojure-api "0.19.3"]
+                 [metosin/ring-swagger-ui "2.1.0-M2-2"]
+                 [metosin/ring-http-response "0.6.1"]
+
+                 [im.chit/purnam.test "0.5.2"]]
+
   :source-paths ["src/clj" "src/cljs"]
   :profiles {:dev {:dependencies [[midje "1.6.3"]]
-                   :plugins [[lein-ring "0.8.10"]
-                             [lein-cljsbuild "1.0.3"]
-                             [com.keminglabs/cljx "0.4.0"]]}
+                   :plugins [[lein-ring "0.9.3"]
+                             [lein-cljsbuild "1.0.5"]]}
              :uberjar {:hooks [leiningen.cljsbuild]
                        :source-paths ["src/clj" "src/main"]
                        :main setup.main
