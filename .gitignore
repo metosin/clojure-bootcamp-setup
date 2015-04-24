@@ -34,9 +34,9 @@ pom.xml.asc
 # IntelliJ IDEA:
 #
 
-*/*.iws
-*/.idea/workspace.xml
-*/.idea/tasks.xml
+/*.iws
+/.idea
+/*.iml
 
 #
 # Project:
