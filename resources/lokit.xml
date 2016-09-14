@@ -1,0 +1,3 @@
+<included>
+  <logger name="setup" level="INFO"/>
+</included>
