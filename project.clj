@@ -4,62 +4,62 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.456"]
+  :dependencies [[org.clojure/clojure "1.9.0"]
+                 [org.clojure/clojurescript "1.10.145"]
 
                  ;; Tooling:
 
                  [org.clojure/tools.namespace "0.3.0-alpha3"]
-                 [org.clojure/tools.nrepl "0.2.12"]
-                 [org.clojure/tools.reader "1.0.0-beta3"]
+                 [org.clojure/tools.nrepl "0.2.13"]
+                 [org.clojure/tools.reader "1.2.2"]
 
                  ;; Common:
 
-                 [org.clojure/core.async "0.3.441"]
-                 [prismatic/schema "1.1.3"]
-                 [prismatic/plumbing "0.5.3"]
-                 [metosin/potpuri "0.4.0"]
+                 [org.clojure/core.async "0.4.474"]
+                 [prismatic/schema "1.1.7"]
+                 [prismatic/plumbing "0.5.5"]
+                 [metosin/potpuri "0.5.1"]
 
                  ;; Backend:
 
-                 [mount "0.1.11"]
+                 [mount "0.1.12"]
                  [metosin/schema-tools "0.10.0-20160425.120043-1"]
                  [metosin/lokit "0.1.0"]
-                 [clj-http "3.4.1"]
+                 [clj-http "3.8.0"]
 
                  ; HTTP:
 
                  [http-kit "2.2.0"]
-                 [ring/ring-core "1.5.1"]
-                 [ring/ring-devel "1.5.1"]
-                 [ring/ring-defaults "0.2.3"]
-                 [ring-webjars "0.1.1"]
+                 [ring/ring-core "1.6.3"]
+                 [ring/ring-devel "1.6.3"]
+                 [ring/ring-defaults "0.3.1"]
+                 [ring-webjars "0.2.0"]
                  [ring-middleware-format "0.7.2"]
-                 [metosin/ring-http-response "0.8.2"]
-                 [metosin/compojure-api "1.1.10"]
-                 [metosin/ring-swagger-ui "2.2.8"]
+                 [metosin/ring-http-response "0.9.0"]
+                 [metosin/compojure-api "1.1.12"]
+                 [metosin/ring-swagger-ui "3.9.0"]
                  [hiccup "1.0.5"]
                  [enlive "1.1.6"]
 
                  ; DB:
 
-                 [org.clojure/java.jdbc "0.6.2-alpha3"]
-                 [org.postgresql/postgresql "42.0.0"]
-                 [hikari-cp "1.7.5"]
-                 [com.layerware/hugsql "0.4.7"]
-                 [org.flywaydb/flyway-core "4.1.2"]
-                 [com.h2database/h2 "1.4.193" :scope "test"]
+                 [org.clojure/java.jdbc "0.7.5"]
+                 [org.postgresql/postgresql "42.2.1"]
+                 [hikari-cp "2.2.0"]
+                 [com.layerware/hugsql "0.4.8"]
+                 [org.flywaydb/flyway-core "5.0.7"]
+                 [com.h2database/h2 "1.4.196" :scope "test"]
 
                  ;; Frontend:
 
-                 [reagent "0.6.0"]
-                 [cljs-http "0.1.42"]
-                 [ring-webjars "0.1.1"]
-                 [org.webjars/bootstrap "4.0.0-alpha.6-1"]
-                 [org.webjars/font-awesome "4.7.0"]
+                 [reagent "0.7.0"]
+                 [cljs-http "0.1.44"]
+                 [ring-webjars "0.2.0"]
+                 [org.webjars/bootstrap "4.0.0-2"]
+                 [org.webjars/font-awesome "5.0.6"]
                  [org.webjars/es5-shim "4.5.9"]
-                 [binaryage/devtools "0.9.2"]
-                 [metosin/reagent-dev-tools "0.1.0"]]
+                 [binaryage/devtools "0.9.9"]
+                 [metosin/reagent-dev-tools "0.2.0"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
             [lein-figwheel "0.5.9" :exclusions [org.clojure/clojure]]
