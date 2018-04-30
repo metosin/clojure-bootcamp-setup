@@ -5,7 +5,7 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.9.0"]
-                 [org.clojure/clojurescript "1.10.145"]
+                 [org.clojure/clojurescript "1.10.238"]
 
                  ;; Tooling:
 
@@ -16,20 +16,20 @@
                  ;; Common:
 
                  [org.clojure/core.async "0.4.474"]
-                 [prismatic/schema "1.1.7"]
+                 [prismatic/schema "1.1.9"]
                  [prismatic/plumbing "0.5.5"]
                  [metosin/potpuri "0.5.1"]
 
                  ;; Backend:
 
                  [mount "0.1.12"]
-                 [metosin/schema-tools "0.10.0-20160425.120043-1"]
+                 [metosin/schema-tools "0.10.1"]
                  [metosin/lokit "0.1.0"]
-                 [clj-http "3.8.0"]
+                 [clj-http "3.9.0"]
 
                  ; HTTP:
 
-                 [http-kit "2.2.0"]
+                 [http-kit "2.3.0"]
                  [ring/ring-core "1.6.3"]
                  [ring/ring-devel "1.6.3"]
                  [ring/ring-defaults "0.3.1"]
@@ -43,22 +43,22 @@
 
                  ; DB:
 
-                 [org.clojure/java.jdbc "0.7.5"]
-                 [org.postgresql/postgresql "42.2.1"]
-                 [hikari-cp "2.2.0"]
+                 [org.clojure/java.jdbc "0.7.6"]
+                 [org.postgresql/postgresql "42.2.2"]
+                 [hikari-cp "2.4.0"]
                  [com.layerware/hugsql "0.4.8"]
                  [org.flywaydb/flyway-core "5.0.7"]
-                 [com.h2database/h2 "1.4.196" :scope "test"]
+                 [com.h2database/h2 "1.4.197" :scope "test"]
 
                  ;; Frontend:
 
-                 [reagent "0.7.0"]
-                 [cljs-http "0.1.44"]
+                 [reagent "0.8.0"]
+                 [cljs-http "0.1.45"]
                  [ring-webjars "0.2.0"]
-                 [org.webjars/bootstrap "4.0.0-2"]
-                 [org.webjars/font-awesome "5.0.6"]
+                 [org.webjars/bootstrap "4.1.0"]
+                 [org.webjars/font-awesome "5.0.10"]
                  [org.webjars/es5-shim "4.5.9"]
-                 [binaryage/devtools "0.9.9"]
+                 [binaryage/devtools "0.9.10"]
                  [metosin/reagent-dev-tools "0.2.0"]]
 
   :plugins [[lein-cljsbuild "1.1.5"]
