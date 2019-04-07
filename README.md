@@ -75,18 +75,22 @@ Clojure project as follows:
 - Close existing workspace if you have one open.
 
 - Open the project folder through `File` -> `Add Folder to Workspace`.
-
-- Open the file `src/clj/setup/server.clj`.
-
 - Open a new terminal `Terminal` -> `New Terminal` which should open into the
   project root.
 
-- Start nREPL with `lein repl` and observe the port the nREPL listens to.
+- Start nREPL with `lein repl`
 
-- Start connecting to nREPL either by pressing `Ctrl+Alt+v` `c` or clicking
-  "nREPL⚡" located in the bottom left footer area.
+- Open a `.clj` file (in our example case the file
+  `src/clj/setup/server.clj`). You should observe a bright "nREPL⚡" icon
+  (located in the bottom left footer area) indicating a live nREPL
+  connection. In case there is no active connection you can try to connect
+  manually:
 
-- Supply the nREPL port when asked for it.
+  - Go to the terminal and note the nREPL port from the first line of the
+    process output.
+
+  - Start connecting by pressing `Ctrl+Alt+v` `c` and supply the (host and)
+    port when/if asked for it.
 
 - See Calva's [Github page][calva-github] for information about how to use the
   plugin.
