@@ -11,8 +11,7 @@ You need:
 * Laptop with Linux, Mac OS X, or recent Windows
 
 Note, if you have Linux or Mac, you can install these using your package
-manager. In case of Mac, use [homebrew](http://brew.sh) with
-[cask](http://caskroom.io).
+manager. In case of Mac, use [Homebrew](http://brew.sh).
 
 * JDK 1.8 _(or later)_: http://java.oracle.com
 * Leiningen 2.5.0 _(or later)_: http://leiningen.org
